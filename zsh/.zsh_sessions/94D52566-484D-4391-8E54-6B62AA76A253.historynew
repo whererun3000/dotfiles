@@ -1,9 +1,0 @@
-cd .config/zsh
-ll
-rm env_linux.zsh
-ll
-vi alias.zsh
-man ls
-ls -al --color
-touch comp.zsh
-vi comp.zsh

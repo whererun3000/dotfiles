@@ -1,5 +1,0 @@
-cd .config/zsh
-ll
-la
-touch env_linux.zsh
-ll

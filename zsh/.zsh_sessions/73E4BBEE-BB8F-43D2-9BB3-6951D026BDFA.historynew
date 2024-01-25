@@ -1,4 +1,0 @@
-cd ~/.config/zsh
-ll
-touch git.zsh
-vi git.zsh

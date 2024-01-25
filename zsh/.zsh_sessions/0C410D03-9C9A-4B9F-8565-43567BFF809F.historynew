@@ -1,4 +1,0 @@
-cd neovim
-cd ..
-cd ~/.config/zsh
-vi prompt.zsh

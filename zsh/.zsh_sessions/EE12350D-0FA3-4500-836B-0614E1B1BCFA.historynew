@@ -1,5 +1,0 @@
-ll
-vi .config/zsh/prompt.zsh
-cd .config/zsh
-ll
-vi prompt.zsh

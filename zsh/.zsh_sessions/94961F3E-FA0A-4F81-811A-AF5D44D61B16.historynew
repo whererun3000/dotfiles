@@ -1,5 +1,0 @@
-cd .config/zsh
-vi prompt.zsh
-vi prompt.zsh
-echo $prompt
-vi prompt.zsh

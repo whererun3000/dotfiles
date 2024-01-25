@@ -1,6 +1,0 @@
-ll
-env
-cd .config/zsh
-ll
-la
-vi .zshrc

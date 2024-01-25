@@ -1,9 +1,0 @@
-ll
-ai
-ll
-man echo
-echo -e --help
-echo --help
-echo -h
-bash
-vi .config/zsh/.zshrc

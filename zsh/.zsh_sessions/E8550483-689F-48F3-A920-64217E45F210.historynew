@@ -1,6 +1,0 @@
-ll
-cd $ZDOTDIR
-ll
-vi comp.zsh
-ll
-vi env_darwin.zsh

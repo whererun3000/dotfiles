@@ -1,8 +1,0 @@
-cd .config/zsh
-ll
-mv function.zsh func.zsh
-vi .zshrc
-vi comp.zsh
-ll
-mv func.zsh func_darwin.zsh
-ll

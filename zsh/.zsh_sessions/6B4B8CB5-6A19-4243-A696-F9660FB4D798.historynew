@@ -1,3 +1,0 @@
-cd neovim
-cd ..
-vi .config/zsh/prompt.zsh
