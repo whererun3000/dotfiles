@@ -1,2 +1,2 @@
 # dotfiles
-my linux/max dot files
+my linux/mac dot files

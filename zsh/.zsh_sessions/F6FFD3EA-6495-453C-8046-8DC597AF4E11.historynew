@@ -1,0 +1,7 @@
+ll
+cd .config/zsh
+ll
+vi alias
+vi alias.zsh
+vi .zshrc
+vi .zshrc

@@ -1,0 +1,7 @@
+user
+root
+su root
+su - root
+su
+su -- root
+vi .config/zsh/prompt.zsh

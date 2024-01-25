@@ -1,0 +1,28 @@
+ll
+env
+cd .config/zsh
+ll
+la
+vi .zshrc
+ll
+vi .config/zsh/.zshrc
+cd /opt/homebrew
+ll
+cd opt
+ls
+ll
+cd coreutils
+ll
+cd bin
+ll
+cd ~
+ll
+cd .config/zsh
+ll
+vi env_darwin.zsh
+exit
+env
+cd .config/zsh
+ll
+ls -al
+vi .zshrc

@@ -1,0 +1,4 @@
+ll
+cd .config/zsh
+ll
+vi prompt.zsh

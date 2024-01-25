@@ -1,0 +1,4 @@
+ll
+env
+cd .config/zsh
+vi .zshrc

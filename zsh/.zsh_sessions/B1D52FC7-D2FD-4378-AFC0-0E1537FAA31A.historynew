@@ -1,0 +1,4 @@
+ll
+cd $ZDOTDIR
+ll
+vi comp.zsh

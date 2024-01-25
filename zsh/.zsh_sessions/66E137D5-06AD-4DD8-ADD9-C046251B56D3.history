@@ -1,0 +1,141 @@
+ll
+env
+cd .config/zsh
+ll
+la
+vi .zshrc
+ll
+vi .config/zsh/.zshrc
+cd /opt/homebrew
+ll
+cd opt
+ls
+ll
+cd coreutils
+ll
+cd bin
+ll
+cd ~
+ll
+cd .config/zsh
+ll
+vi env_darwin.zsh
+exit
+env
+cd .config/zsh
+ll
+ls -al
+vi .zshrc
+cd .config/zsh
+ls -al
+vi .zshrc
+vi .zshrc
+vi .zshrc
+cd .config/zsh
+ll
+ls -al
+vi .zshrc
+typeset -p modules
+type modules
+vi .zshrc
+exit
+ll
+ls -al
+cd .config/zsh
+ll
+ls -al
+vi .zshrc
+vi .zshrc
+zsh
+ll
+ls -al
+vi comp.zsh
+vi .zshrc
+cd .config/zsh
+ll
+rm git.zsh
+vi .zshrc
+vi prompt.zsh
+vi prompt.zsh
+cd neovim
+cd ..
+cd /usr/share/zsh
+ll
+cd 5.9
+ll
+cd help
+ll
+cd ..
+ll
+cd scripts
+ll
+cd ../functions
+ll
+cd ~/.config/zsh
+ll
+vi comp.zsh
+echo $fpath
+cd /usr/share/zsh/site-functions/
+ll
+cd ../5.9/functions
+vi compinit
+compinit
+compinstall
+man zshcompsys
+zstyle
+cd ~/.config/zsh
+ll
+vi comp.zsh
+vi comp.zsh
+ll
+ll
+vi comp.zsh
+vi alias.zsh
+ls -a
+ls -A
+ll
+vi alias.zsh
+ll
+la
+la
+cd ~
+ll
+la
+cd .config
+ll
+cd zsh
+ll
+vi prompt.zsh
+ll
+cd ~
+ll
+cd cproject/dlmalloc
+ll
+vi malloc.c
+git branch 
+ll
+cd ~/.config/zsh
+ll
+vi prompt.zsh
+zstyle
+zstyle -t
+zstyle -t completion
+man zshmodules
+zstyle -L
+echo /usr/share/zsh/site-functions
+cd $fpath
+echo $fpath
+cd /usr/share/zsh/5.9/functions
+ll
+ll |grep -i comp
+ll $ZDOTDIR
+cat /Users/wrl/.config/zsh/comp.zsh
+ll |grep -i comp
+vi compinit
+cd $ZDOTDIR/
+ll
+vi comp.zsh
+ll
+vi comp.zsh
+cd .config/zsh
+vi comp.zsh

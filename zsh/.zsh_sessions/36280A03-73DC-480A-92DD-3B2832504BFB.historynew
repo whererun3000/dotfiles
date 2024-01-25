@@ -1,0 +1,16 @@
+ll
+tmux
+ll -a
+la
+vi .tmux.conf
+la
+vi .tmux.conf
+vi .zshenv
+vi .gitconfig
+cd ~/cproject/memalloc
+ll
+git status
+git log --oneline --graph
+vi ~/.gitconfig
+git config --global color.ui.auto
+vi ~/.gitconfig

@@ -1,0 +1,8 @@
+env
+ll
+ll
+env
+ll
+la
+vi .config/zsh/.zshrc
+vi /Users/wrl/.config/zsh/alias.zsh

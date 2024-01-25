@@ -1,0 +1,7 @@
+cd .config/zsh
+ll
+vi func_darwin.zsh
+ll
+touch prompt.zsh
+vi prompt.zsh
+vi prompt.zsh

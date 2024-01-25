@@ -1,0 +1,16 @@
+cd neovim
+zstyle :vcs_info:git formats format
+man zshmodules
+cd /usr/share/zsh
+ll
+cd 5.9
+ll
+cd functions
+ll
+vi vcs_info
+vi zstyle+ 
+cd ~
+cd .config
+cd zsh
+ll
+vi prompt.zsh
