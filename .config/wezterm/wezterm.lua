@@ -20,7 +20,7 @@ local config = {
 }
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-	config.default_prog = { "wsl", "--cd", "~"}
+	config.default_prog = { "wsl", "--cd", "~" }
 else
 end
 
