@@ -1,11 +1,12 @@
 return {
-    "neanias/everforest-nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
-    version = false,
     priority = 1000,
-    config = function()
-        local everforest = require("everforest")
-        everforest.setup {}
-        everforest.load()
+    opts = {
+        transparent = true,
+    },
+    config = function(_, opts)
+        require("tokyonight").setup(opts)
+        vim.cmd([[colorscheme tokyonight]])
     end,
 }

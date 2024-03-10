@@ -9,7 +9,9 @@ export SAVEHIST=10000
 export ZSH_SESSION_FILE=$ZSH_CACHE_HOME/.zsh_session
 
 export USRLCL=/usr/local
-export GOROOT=/opt/go
+export GOROOT=$USRLCL/go
 export GOPATH=~/gopath
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$USRLCL/bin:$GOROOT/bin:$GOBIN
+export PATH=$PATH:$USRLCL/bin:$GOROOT/bin:$GOPATH/bin
+
+set -o emacs

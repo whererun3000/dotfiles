@@ -17,6 +17,7 @@ return {
             vim.keymap.set('n', 'gq', function() vim.lsp.buf.format({ async = true }) end, opts)
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
             vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, opts)
+            vim.keymap.set('n', '<Leader>ss', builtin.lsp_document_symbols, opts)
         end
 
         local capabilities = vim.lsp.protocol.make_client_capabilities()
