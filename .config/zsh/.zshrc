@@ -1,22 +1,18 @@
-local os_type="$(uname -s)"
-local zmodules=(
-	"env"
-	"alias"
-	"func"
-	"prompt"
-	"comp"
-)
+# Created by Zap installer
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
-for zmodule in "${zmodules[@]}"; do
-	local file="$ZDOTDIR/$zmodule.zsh"
-	if [ -f "$file" ]; then
-		source $file
-		echo -e "\033[34m$file loaded\033[0m"
-	fi
-	
-	local os_file="$ZDOTDIR/${zmodule}_${os_type:l}.zsh"
-	if [ -f "$os_file" ]; then
-		source $os_file
-		echo -e "\033[34m$os_file loaded\033[0m"
-	fi
-done
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
+
+plug "zsh-users/zsh-autosuggestions"
+plug "zap-zsh/supercharge"
+plug "wintermi/zsh-starship"
+plug "zsh-users/zsh-syntax-highlighting"
+
+plug "$ZDOTDIR/exports.zsh"
+plug "$ZDOTDIR/options.zsh"
+plug "$ZDOTDIR/aliases.zsh"
+
+# Load and initialise completion system
+autoload -Uz compinit && compinit
+
+[[ -f "$X_CONFIG_ZSH/.zshrc" ]] && source "$X_CONFIG_ZSH/.zshrc"
