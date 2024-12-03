@@ -24,11 +24,11 @@ export GOPATH="$WORKSPACE/go"
 export GOBIN="$GOPATH/bin"
 export GOCACHE="$XDG_CACHE_HOME/go-build"
 
+# starship
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship.toml"
+
 # PATH
 export PATH="/usr/local/bin:$PATH"
 export PATH="$GOBIN:$PATH"
-
-# fpath
-fpath=($ZDOTDIR/functions $fpath)
 
 [[ -f "$X_CONFIG_ZSH/.zshenv" ]] && source "$X_CONFIG_ZSH/.zshenv"
