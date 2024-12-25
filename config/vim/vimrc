@@ -1,0 +1,31 @@
+syntax on
+
+filetype on
+filetype indent on
+filetype plugin on
+
+set number
+set nobackup
+set nocompatible
+
+set autoindent
+set backspace=indent,eol,start
+
+set hlsearch
+set incsearch
+set smartcase
+
+set showcmd
+set showmode
+set showmatch
+
+set expandtab
+
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+set tabstop=4
+set shiftwidth=4
+
+set encoding=utf-8
