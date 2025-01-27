@@ -1,31 +1,32 @@
 syntax on
 
-filetype on
-filetype indent on
-filetype plugin on
+filetype indent plugin on
+
+set autoread
+set nobackup
+set noswapfile
 
 set number
-set nobackup
-set nocompatible
-
-set autoindent
-set backspace=indent,eol,start
-
-set hlsearch
-set incsearch
-set smartcase
+set relativenumber
 
 set showcmd
 set showmode
-set showmatch
 
-set expandtab
+set incsearch
+set smartcase
+set ignorecase
 
-set wildmenu
-set wildmode=list:longest
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set background=dark
 
-set tabstop=4
-set shiftwidth=4
+inoremap <silent> <C-B> <Left>
+inoremap <silent> <C-F> <Right>
+inoremap <silent> <C-P> <Up>
+inoremap <silent> <C-N> <Down>
+inoremap <silent> <C-A> <Home>
+inoremap <silent> <C-E> <End>
 
-set encoding=utf-8
+cnoremap <C-B> <Left>
+cnoremap <C-F> <Right>
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
+cnoremap <C-L> <C-F>
