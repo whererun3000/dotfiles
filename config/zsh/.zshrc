@@ -4,6 +4,8 @@
 plug "$ZDOTDIR/core/aliases.zsh"
 plug "$ZDOTDIR/core/supercharge.zsh"
 
+plug "$ZDOTDIR/plugins/colored-man-pages"
+
 plug "wintermi/zsh-starship"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
