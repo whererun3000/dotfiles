@@ -1,3 +1,6 @@
+os=$(uname -s)
+export OS=${os:l}
+
 export WORKSPACE="$HOME/workspace"
 
 # x config
@@ -16,9 +19,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # zsh
 export HISTSIZE=10000
 export SAVEHIST=10000
-export HISTFILE="$XDG_CACHE_HOME/zsh/.zhistory"
-export COMPDUMPFILE="$XDG_CACHE_HOME/zsh/.zcompdump"
-export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump"
+export ZSH_CACHE_HOME="$XDG_CACHE_HOME/zsh"
 
 # golang
 export GOROOT="/usr/local/go"
@@ -35,4 +36,5 @@ export PATH="$GOBIN:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
+[[ -f "$ZDOTDIR/arch/$OS/.zshenv" ]] && source "$ZDOTDIR/arch/$OS/.zshenv"
 [[ -f "$X_CONFIG_ZSH/.zshenv" ]] && source "$X_CONFIG_ZSH/.zshenv"

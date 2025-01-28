@@ -1,18 +1,26 @@
-setopt emacs
+
+alias ls='ls --color=always'
+alias ll='ls -lhF --color=always'
+alias la='ls -lhAF --color=always'
+alias grep='grep --color=auto'
+
+export HISTFILE="$ZSH_CACHE_HOME/.zhistory"
+export COMPDUMPFILE="$ZSH_CACHE_HOME/.zcompdump"
 
 # completions
-autoload -Uz compinit -d $ZSH_COMPDUMP
+autoload -Uz compinit
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 _comp_options+=(globdots)		# Include hidden files.
 zle_highlight=('paste:none')
-for dump in "$ZSH_COMPDUMP"(N.mh+24); do
-  compinit -d $ZSH_COMPDUMP
-done
-compinit -C -d $ZSH_COMPDUMP
+# for dump in "$ZSH_COMPDUMP"(N.mh+24); do
+#  compinit
+# done
+compinit -C -d $COMPDUMPFILE
 
 unsetopt BEEP
+setopt emacs
 setopt AUTO_CD
 setopt GLOB_DOTS
 setopt NOMATCH
@@ -20,7 +28,6 @@ setopt MENU_COMPLETE
 setopt EXTENDED_GLOB
 setopt INTERACTIVE_COMMENTS
 setopt APPEND_HISTORY
-
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 # setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
