@@ -16,6 +16,10 @@ set incsearch
 set smartcase
 set ignorecase
 
+set wildmenu
+set wildmode=longest:full,full
+set wildignorecase
+
 set background=dark
 
 inoremap <silent> <C-B> <Left>
