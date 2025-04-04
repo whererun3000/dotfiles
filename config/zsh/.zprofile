@@ -1,4 +1,5 @@
-export OS=${$(uname -s):l}
+os=$(uname -s)
+export OS=${os:l}
 
 export WORKSPACE="$HOME/workspace"
 
@@ -30,10 +31,11 @@ export GOCACHE="$XDG_CACHE_HOME/go-build"
 export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship.toml"
 
+[[ -f "$ZDOTDIR/sys/$OS/.zprofile" ]] && source "$ZDOTDIR/sys/$OS/.zprofile"
+[[ -f "$X_CONFIG_ZSH/.zprofile" ]] && source "$X_CONFIG_ZSH/.zprofile"
+
 # PATH
 export PATH="$GOBIN:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
-[[ -f "$ZDOTDIR/sys/$OS/.zshenv" ]] && source "$ZDOTDIR/sys/$OS/.zshenv"
-[[ -f "$X_CONFIG_ZSH/.zshenv" ]] && source "$X_CONFIG_ZSH/.zshenv"

@@ -1,0 +1,13 @@
+[core]
+	editor = vi
+[merge]
+	tool = vimdiff
+[alias]
+	st = status
+	lg = log --color --graph --pretty=format:'%C(bold red)%h%C(reset) - %C(bold green)(%cr)%C(bold blue)<%an>%C(reset) -%C(bold yellow)%d%C(reset) %s'
+[diff]
+	tool = vimdiff
+[status]
+	short = true
+[fetch]
+	prune = true
