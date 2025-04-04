@@ -1,0 +1,32 @@
+{
+    /* editor */
+    "editor.fontFamily": "'FiraCode Nerd Font Regular',Consolas, 'Courier New', monospace",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+
+    /* workbench */
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.sideBar.location": "right",
+
+    /* vscode-neovim */
+    "vscode-neovim.useWSL": true,
+    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/vscode/nvim/init.lua",
+
+    /* golang */
+    "gopls": {
+        "ui.semanticTokens": true,
+    },
+
+    /* extensions */
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+
+    /* copilot */
+    "github.copilot.editor.enableAutoCompletions": true,
+
+    /* security */
+    "security.workspace.trust.untrustedFiles": "open",
+}
