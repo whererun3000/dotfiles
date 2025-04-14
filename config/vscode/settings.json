@@ -13,6 +13,7 @@
     /* vscode-neovim */
     "vscode-neovim.useWSL": true,
     "vscode-neovim.neovimInitVimPaths.linux": "~/.config/vscode/nvim/init.lua",
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/vscode/nvim/init.lua",
 
     /* golang */
     "gopls": {
