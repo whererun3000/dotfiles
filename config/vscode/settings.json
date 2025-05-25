@@ -1,9 +1,9 @@
 {
     /* editor */
-    "editor.fontFamily": "'FiraCode Nerd Font Regular',Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'0xProto Nerd Font Mono', 'FiraMono Nerd Font Mono', 'FiraCode Nerd Font Regular', 'Cascadia Code', Consolas, 'Courier New', monospace",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
-    "editor.scrollbar.vertical": "hidden",
+    // "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
 
     /* workbench */
