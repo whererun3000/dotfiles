@@ -1,5 +1,5 @@
-export HISTFILE="$ZSH_CACHE_HOME/.zhistory"
-export COMPDUMPFILE="$ZSH_CACHE_HOME/.zcompdump"
+export HISTFILE="$ZSH_CACHE_HOME/history"
+export COMPDUMPFILE="$ZSH_CACHE_HOME/compdump"
 
 alias ls='ls --color=always'
 alias ll='ls -lhF --color=always'
@@ -29,7 +29,8 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 
 # completions
-autoload -Uz compinit && compinit -d "$COMPDUMPFILE"
+echo $COMPDUMPFILE
+autoload -Uz compinit && compinit -i -d "$COMPDUMPFILE"
 _comp_options+=(globdots)		# Include hidden files.
 
 zmodload zsh/complist
