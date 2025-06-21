@@ -27,7 +27,7 @@ set smartindent
 
 set mouse=a
 
-colorscheme spaceduck
+colorscheme everforest
 
 inoremap <silent> <C-B> <Left>
 inoremap <silent> <C-F> <Right>

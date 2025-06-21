@@ -1,5 +1,5 @@
-export HISTFILE="$ZSH_CACHE_HOME/history"
-export COMPDUMPFILE="$ZSH_CACHE_HOME/compdump"
+export HISTFILE="$XDG_CACHE_HOME/zsh/history"
+export COMPDUMPFILE="$XDG_CACHE_HOME/zsh/compdump"
 
 alias ls='ls --color=always'
 alias ll='ls -lhF --color=always'
