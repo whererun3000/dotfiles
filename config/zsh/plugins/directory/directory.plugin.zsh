@@ -4,7 +4,9 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
 
-alias ls='lsd'
+if $(command -v lsd &> /dev/null); then
+	alias ls='lsd'
+fi
 
 alias -g ...='../..'
 alias -g ....='../../..'
