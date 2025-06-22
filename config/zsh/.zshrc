@@ -1,12 +1,24 @@
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+setopt emacs
+unsetopt BEEP
 
-# remote plugins
-plug "wintermi/zsh-starship"
-plug "zsh-users/zsh-autosuggestions"
-plug "zsh-users/zsh-syntax-highlighting"
+# zplug init
+export ZPLUG_HOME="$XDG_DATA_HOME/zplug"
+source "$ZPLUG_HOME/init.zsh"
+
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# zsh-users
+zplug "zsh-users/zsh-autosuggestions"
+
+zplug "zdharma/fast-syntax-highlighting", defer:2
 
 # local plugins
-plug "$ZDOTDIR/plugins/supercharge"
-plug "$ZDOTDIR/plugins/colored-man-pages"
+zplug "$ZDOTDIR/plugins/history", from:local
+zplug "$ZDOTDIR/plugins/starship", from:local
+zplug "$ZDOTDIR/plugins/directory", from:local
+zplug "$ZDOTDIR/plugins/completion", from:local, defer:3
+zplug "$ZDOTDIR/plugins/colored-man-pages", from:local
+
+zplug load
 
 [[ -f "$X_CONFIG_ZSH/.zshrc" ]] && source "$X_CONFIG_ZSH/.zshrc"
