@@ -21,4 +21,4 @@ zplug "$ZDOTDIR/plugins/colored-man-pages", from:local
 
 zplug load
 
-[[ -f "$X_CONFIG_ZSH/.zshrc" ]] && source "$X_CONFIG_ZSH/.zshrc"
+[[ -f "$XZDOTDIR/.zshrc" ]] && source "$XZDOTDIR/.zshrc"

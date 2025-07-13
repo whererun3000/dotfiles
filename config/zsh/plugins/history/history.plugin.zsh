@@ -18,6 +18,6 @@ setopt HIST_BEEP              # Beep when accessing non-existent history.
 # Variables
 #
 
-HISTFILE="${ZSH_CACHE_DIR:-$HOME/.cache}/.zsh_history" # The path to the history file.
+HISTFILE="${ZCACHEDIR:-$HOME/.cache/zsh}/.history" # The path to the history file.
 HISTSIZE=100000 # The maximum number of events to save in the internal history.
 SAVEHIST=$HISTSIZE # The maximum number of events to save in the history file.

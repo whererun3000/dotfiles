@@ -1,8 +1,8 @@
 # Changing/making/removing directory
-setopt auto_cd
-setopt auto_pushd
-setopt pushd_ignore_dups
-setopt pushdminus
+setopt AUTO_CD
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHDMINUS
 
 if $(command -v lsd &> /dev/null); then
 	alias ls='lsd'
