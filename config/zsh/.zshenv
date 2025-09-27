@@ -1,12 +1,16 @@
 # Editor
-export EDITOR="vi"
-export VISUAL="vi"
+export EDITOR="vim"
+export VISUAL="vim"
 
 # XDG
+export XDG_BIN_HOME=$HOME/.local/bin
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
+
+# Zplug
+export ZPLUG_HOME="$XDG_DATA_HOME/zplug"
 
 # Extra config
 export X_CONFIG_HOME=$HOME/x/config
@@ -22,13 +26,16 @@ export LESSKEYIN=$XDG_CONFIG_HOME/less/.lesskey
 export LESSHISTFILE=$XDG_CACHE_HOME/less/.lesshst
 
 # Golang
-export GOROOT=/opt/go
+export GOROOT=/usr/local/go
 export GOPATH=$WORKSPACE/go/path
 export GOBIN=$GOPATH/bin
 export GOCACHE=$XDG_CACHE_HOME/go-build
 
+# Zplug
+export ZPLUG_HOME="$XDG_DATA_HOME/zplug"
+
 # PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=$XDG_BIN_HOME:/usr/local/bin:$PATH
 export PATH=$GOROOT/bin:$PATH
 export PATH=$GOBIN:$PATH
 

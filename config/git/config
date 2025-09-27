@@ -11,5 +11,3 @@
 	short = true
 [fetch]
 	prune = true
-[url "git@gitlab.ttyuyin.com:"]
-	insteadOf = https://gitlab.ttyuyin.com/

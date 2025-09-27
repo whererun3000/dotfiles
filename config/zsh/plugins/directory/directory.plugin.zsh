@@ -4,10 +4,6 @@ setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 setopt PUSHDMINUS
 
-if $(command -v lsd &> /dev/null); then
-	alias ls='lsd'
-fi
-
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -27,7 +23,7 @@ alias 9='cd -9'
 alias md='mkdir -p'
 alias rd=rmdir
 
-function d () {
+function d() {
   if [[ -n $1 ]]; then
     dirs "$@"
   else
@@ -37,7 +33,10 @@ function d () {
 compdef _dirs d
 
 # List directory contents
-alias lsa='ls -lah'
+ls () {
+	command ls -p --color=auto --group-directories-first "$@"
+}
 alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
+alias lsa='ls -lah'
