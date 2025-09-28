@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-for f in $(ls "config"); do
+for f in $(find config -mindepth 1 -maxdepth 1); do
 	target=$(realpath "$f")
-	linkname="$XDG_CONFIG_HOME/$f"
+	linkname="$XDG_CONFIG_HOME/$(basename $f)"
 	if [ -e "$linkname" ]; then
 		echo "$linkname already exists, skip"
 	else
