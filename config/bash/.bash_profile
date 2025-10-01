@@ -19,4 +19,4 @@ for dir in $(find "$BASH_DOTDIR/plugins" -mindepth 1 -maxdepth 1 -type d); do
 	[ -f "$dir/.bash_profile" ] && . "$dir/.bash_profile"
 done
 
-[ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"
+[[ $- = *i* ]] && [ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"
