@@ -4,7 +4,7 @@
 
 keybinds clear-defaults=true {
     locked {
-        bind "Ctrl x" { SwitchToMode "normal"; }
+        bind "Ctrl m" { SwitchToMode "normal"; }
     }
     pane {
         bind "left" { MoveFocus "left"; }
@@ -169,7 +169,7 @@ keybinds clear-defaults=true {
         bind "Ctrl o" { SwitchToMode "session"; }
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" "prompt" "tmux" {
-        bind "Ctrl x" { SwitchToMode "locked"; }
+        bind "Ctrl m" { SwitchToMode "locked"; }
     }
     shared_except "locked" "scroll" {
         bind "Ctrl s" { SwitchToMode "scroll"; }

@@ -55,4 +55,8 @@ if $(command -v /opt/homebrew/bin/brew >& /dev/null); then
 	export HOMEBREW_PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 fi
 
+if command -v bob >& /dev/null; then
+	. "$XDG_DATA_HOME/bob/env/env.sh"
+fi
+
 [[ -f "$XZDOTDIR/.zshenv" ]] && source "$XZDOTDIR/.zshenv"

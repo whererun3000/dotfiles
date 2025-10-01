@@ -6,9 +6,8 @@ source "$ZPLUG_HOME/init.zsh"
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-# zsh-users
+# remote plugins
 zplug "zsh-users/zsh-autosuggestions"
-
 zplug "zdharma/fast-syntax-highlighting", defer:2
 
 # local plugins
