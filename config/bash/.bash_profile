@@ -12,10 +12,16 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 
 export BASH_DOTDIR=$XDG_CONFIG_HOME/bash
+export BASH_PLUGDIR=$BASH_DOTDIR/plugins
 
 echo ".bash_profile loaded"
 
-for dir in $(find "$BASH_DOTDIR/plugins" -mindepth 1 -maxdepth 1 -type d); do
+for file in /usr/local/etc/profile.d/*.sh; do
+	# . "$file"
+	echo "$file loaded"
+done
+
+for dir in $(find "$BASH_PLUGDIR" -mindepth 1 -maxdepth 1 -type d); do
 	[ -f "$dir/.bash_profile" ] && . "$dir/.bash_profile"
 done
 

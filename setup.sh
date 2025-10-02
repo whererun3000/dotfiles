@@ -10,3 +10,6 @@ for f in $(find config -mindepth 1 -maxdepth 1); do
 		echo "$linkname -> $target"
 	fi
 done
+
+ln -sf $(realpath config/bash/.bashrc) $HOME/.bashrc
+ln -sf $(realpath config/bash/.bash_profile) $HOME/.bash_profile
