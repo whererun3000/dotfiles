@@ -9,7 +9,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 
-export WORKSPACE=$HOME/Workspace
+export WORKSPACE_HOME=$HOME/Workspace
 
 export LESSKEYIN=$XDG_CONFIG_HOME/less/.lesskey
 export LESSHISTFILE=$XDG_CACHE_HOME/less/.lesshst
