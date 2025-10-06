@@ -1,3 +1,5 @@
-require('core.options')
-require('core.keymaps')
-require('core.lazy')
+require("base")
+require("plugins")
+require("lsp")
+
+vim.cmd.colorscheme("catppuccin")

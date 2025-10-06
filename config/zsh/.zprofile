@@ -20,6 +20,8 @@ export ZPLUGDIR=$ZDOTDIR/plugins
 export ZDATADIR=$XDG_DATA_HOME/zsh
 export ZCACHEDIR=$XDG_CACHE_HOME/zsh
 
+export SHELL_SESSION_DIR=$ZCACHEDIR/.zsh_sessions
+
 for dir in $(find $ZPLUGDIR -mindepth 1 -maxdepth 1 -type d); do
 	if [ -f "$dir/.zprofile" ]; then
 		. "$dir/.zprofile"
