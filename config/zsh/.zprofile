@@ -25,8 +25,5 @@ export SHELL_SESSION_DIR=$ZCACHEDIR/.zsh_sessions
 for dir in $(find $ZPLUGDIR -mindepth 1 -maxdepth 1 -type d); do
 	if [ -f "$dir/.zprofile" ]; then
 		. "$dir/.zprofile"
-		echo "$dir/.zprofile loaded"
 	fi
 done
-
-echo ".zprofile loaded"
