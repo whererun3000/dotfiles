@@ -1,3 +1,5 @@
+set -o emacs
+
 ls() {
 	command ls -h --color=always "$@"
 }
