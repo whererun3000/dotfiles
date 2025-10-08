@@ -4,6 +4,18 @@ ls() {
 	command ls -h --color=always "$@"
 }
 
+vim() {
+    printf '\e7'
+    command vim "$@"
+    printf '\e8'
+}
+
+nvim() {
+    printf '\e7'
+    command nvim "$@"
+    printf '\e8'
+}
+
 alias ll="ls -l"
 alias la="ls -al"
 alias vi="vim"

@@ -1,0 +1,21 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/vscode.toml"
+]
+
+[window]
+decorations = "None"
+opacity = 0.8
+blur = true
+option_as_alt = "Both"
+
+[font]
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
+thickness = 0.2
+
+[terminal]
+shell =  { program = "/bin/zsh" }
+osc52 =  "CopyPaste"
