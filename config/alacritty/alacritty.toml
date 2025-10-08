@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/vscode.toml"
+    "~/.config/alacritty/themes/thelovelace.toml"
 ]
 
 [window]
