@@ -1,4 +1,4 @@
-vim.lsp.enable({ 'gopls', 'clangd', 'lua_ls', 'pyright' })
+vim.lsp.enable({ 'gopls', 'clangd', 'lua_ls', 'ruff' })
 
 vim.keymap.del({ 'n', 'v' }, 'gra')
 vim.keymap.del('n', 'gri')

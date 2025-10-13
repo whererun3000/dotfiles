@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup {
-    ensure_installed = { "go", "lua", "c" },
+    ensure_installed = { "go", "lua", "c", "python" },
 
     folds = { enable = true },
     indent = { enable = true },
