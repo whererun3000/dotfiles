@@ -1,6 +1,6 @@
 require("plugins.mini.icons")
-require("plugins.mini.animate")
 require("plugins.mini.tabline")
+require("plugins.mini.statusline")
 require("plugins.mini.bracketed")
 require("plugins.mini.completion")
 require("plugins.mini.pick")

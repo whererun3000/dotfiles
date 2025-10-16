@@ -20,5 +20,14 @@ vim.o.smarttab = true
 vim.o.smartindent = true
 
 vim.o.grepprg = "rg --vimgrep"
+vim.o.grepformat = "%f:%l:%c:%m"
 
 vim.o.winborder = "rounded"
+
+vim.o.splitkeep = "screen"
+vim.o.splitbelow = true
+vim.o.splitright = true
+
+vim.o.wildmode = "longest:full,full"
+
+vim.o.completeopt = "menu,menuone,noselect"

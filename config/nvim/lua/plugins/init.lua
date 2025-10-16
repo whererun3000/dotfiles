@@ -7,9 +7,13 @@ vim.pack.add({
 
     { src = "https://github.com/catppuccin/nvim.git" },
 	{ src = "https://github.com/folke/tokyonight.nvim.git" },
+
+	{ src = "https://github.com/MunifTanjim/nui.nvim" },
+	{ src = "https://github.com/folke/noice.nvim.git" },
 })
 
 require("plugins.lsp")
 require("plugins.mini")
 require("plugins.syntax")
 require("plugins.colors")
+require("plugins.ui")

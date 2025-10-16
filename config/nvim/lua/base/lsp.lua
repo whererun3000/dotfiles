@@ -6,5 +6,12 @@ vim.keymap.del('n', 'grn')
 vim.keymap.del('n', 'grr')
 vim.keymap.del('n', 'grt')
 
-vim.keymap.set('n', 'gN', vim.lsp.buf.rename)
-vim.keymap.set('n', 'gD', vim.lsp.buf.definition)
+vim.api.nvim_create_autocmd('LspAttach', {
+	callback = function(args)
+		vim.keymap.set('n', 'gN', vim.lsp.buf.rename, { buf = args.buffer })
+		vim.keymap.set('n', 'gD', vim.lsp.buf.definition, { buf = args.buffer })
+
+		vim.lsp.on_type_formatting.enable(true)
+	end,
+})
+
