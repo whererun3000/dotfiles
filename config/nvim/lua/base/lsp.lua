@@ -10,8 +10,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(args)
 		vim.keymap.set('n', 'gN', vim.lsp.buf.rename, { buf = args.buffer })
 		vim.keymap.set('n', 'gD', vim.lsp.buf.definition, { buf = args.buffer })
-
-		vim.lsp.on_type_formatting.enable(true)
 	end,
 })
-

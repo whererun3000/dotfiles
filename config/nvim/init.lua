@@ -1,4 +1,4 @@
 require("base")
 require("plugins")
 
-vim.cmd.colorscheme("miniautumn")
+vim.cmd.colorscheme("catppuccin")
