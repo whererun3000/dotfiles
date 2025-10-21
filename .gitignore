@@ -3,3 +3,5 @@
 .zsh_history/
 
 .netrwhist
+
+config/nvim/lua/config/user/

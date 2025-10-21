@@ -1,7 +1,10 @@
-vim.keymap.set('c', '<C-A>', '<Home>')
-vim.keymap.set('c', '<C-E>', '<End>')
-vim.keymap.set('c', '<C-B>', '<Left>')
-vim.keymap.set('c', '<C-F>', '<Right>')
+vim.keymap.set('c', '<C-a>', '<home>')
+vim.keymap.set('c', '<C-e>', '<end>')
+vim.keymap.set('c', '<C-b>', '<left>')
+vim.keymap.set('c', '<C-f>', '<right>')
+
+vim.keymap.set('n', '<C-w>-', '<cmd>split<cr>')
+vim.keymap.set('n', '<C-w>\\', '<cmd>vsplit<cr>')
 
 require('mini.move').setup()
 require('mini.bracketed').setup()

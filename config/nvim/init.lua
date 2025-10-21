@@ -26,11 +26,10 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
 })
 
-require("base")
-require("lsp")
-require("syntax")
-require("ui")
-
 require("config")
+require("base")
+require("syntax")
+require("lsp")
+require("ui")
 
 vim.cmd.colorscheme("catppuccin")
