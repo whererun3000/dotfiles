@@ -1,8 +1,8 @@
 require("catppuccin").setup {
 	lsp_styles = {
 		underlines = {
-			errors = { "undercurl" },
 			hints = { "undercurl" },
+			errors = { "undercurl" },
 			warnings = { "undercurl" },
 			information = { "undercurl" },
 		},

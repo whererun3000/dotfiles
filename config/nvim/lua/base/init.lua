@@ -1,3 +1,3 @@
-require("base.options")
-require("base.keymaps")
-require("base.lsp")
+require("base.finder")
+require("base.explorer")
+require("base.completer")

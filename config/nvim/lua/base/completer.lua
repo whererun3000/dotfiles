@@ -1,8 +1,6 @@
-require("plugins.cmp.lsp")
-require("plugins.cmp.cmdline")
-
 local cmp = require("cmp")
 
+-- global
 cmp.setup({
 	window = {
 		completion = cmp.config.window.bordered({
@@ -33,7 +31,7 @@ cmp.setup({
 	}),
 	formatting = {
 		format = function(entry, item)
-			local icons = require("config.icons").kinds
+			local icons = require("ui.icons").kinds
 			if icons[item.kind] then
 				item.kind = icons[item.kind] .. item.kind
 			end
@@ -52,4 +50,25 @@ cmp.setup({
 			return item
 		end,
 	}
+})
+
+
+--- lsp
+vim.lsp.config("*", {
+	capabilities = require("cmp_nvim_lsp").default_capabilities(),
+})
+
+--- cmdline
+cmp.setup.cmdline(':', {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{
+			name = 'cmdline',
+			option = {
+				ignore_cmds = { 'Man', '!' }
+			}
+		}
+	})
 })
