@@ -28,8 +28,8 @@ vim.pack.add({
 
 require("config")
 require("base")
-require("syntax")
 require("lsp")
+require("syntax")
 require("ui")
 
 vim.cmd.colorscheme("catppuccin")

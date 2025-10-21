@@ -1,6 +1,7 @@
 local fzf = require("fzf-lua")
 
 vim.keymap.set('n', 'gR', fzf.lsp_references)
+vim.keymap.set('n', 'gA', fzf.lsp_code_actions)
 vim.keymap.set('n', 'gI', fzf.lsp_implementations)
 vim.keymap.set('n', '<C-p>o', fzf.lsp_document_symbols)
 vim.keymap.set('n', '<C-p>O', fzf.lsp_workspace_symbols)
