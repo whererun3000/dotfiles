@@ -30,4 +30,4 @@ vim.o.splitright = true
 
 vim.o.wildmode = "longest:full,full"
 
-vim.o.completeopt = "menu,menuone,noselect"
+vim.o.completeopt = "noselect,menu,menuone,popup"

@@ -1,9 +1,9 @@
-local extra = require("mini.extra")
-extra.setup()
-
-local pickers = extra.pickers
-
-vim.keymap.set('n', '<C-p>e', pickers.explorer)
+--- local extra = require("mini.extra")
+--- extra.setup()
+---
+--- local pickers = extra.pickers
+---
+--- vim.keymap.set('n', '<C-p>e', pickers.explorer)
 --- vim.keymap.set('n', '<C-p>d', pickers.diagnostic)
 
 --- vim.keymap.set('n', '<C-p>gc', pickers.git_commits)
@@ -14,3 +14,7 @@ vim.keymap.set('n', '<C-p>e', pickers.explorer)
 
 --- vim.keymap.set('n', 'gR', function() pickers.lsp({ scope = 'references' }) end)
 --- vim.keymap.set('n', 'gI', function() pickers.lsp({ scope = 'implementation' }) end)
+
+require("oil").setup()
+
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = "Open parent directory" })

@@ -16,9 +16,11 @@ vim.pack.add({
 	{ src = "https://github.com/hrsh7th/cmp-cmdline.git" },
 	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
 
+	{ src = "https://github.com/sindrets/diffview.nvim.git" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim.git" },
 
 	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
+	{ src = "https://github.com/stevearc/oil.nvim.git" },
 
 	{ src = "https://github.com/akinsho/bufferline.nvim.git" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim.git" },
