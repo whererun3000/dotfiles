@@ -1,8 +1,7 @@
-local this = require("gitsigns")
+local gitsigns = require("gitsigns")
 
-this.setup {
+gitsigns.setup {
 	on_attach = function(buf)
-		vim.keymap.set('n', '<Leader>gb', this.blame, { buffer = true })
-		vim.keymap.set('n', '<Leader>gd', function() this.diffthis("~") end, { buffer = true })
+		vim.keymap.set('n', '<Leader>gb', gitsigns.blame, { buffer = true })
 	end,
 }

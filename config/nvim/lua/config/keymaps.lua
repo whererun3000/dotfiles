@@ -8,5 +8,7 @@ vim.keymap.set('n', '<C-w>\\', '<CMD>vsplit<CR>')
 
 vim.keymap.set('n', '<Leader>bd', '<CMD>bd<CR>')
 
+vim.keymap.set('n', '<ESC>', '<CMD>nohl<CR>')
+
 require('mini.move').setup()
 require('mini.bracketed').setup()
