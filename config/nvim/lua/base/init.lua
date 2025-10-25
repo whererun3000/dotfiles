@@ -1,4 +1,4 @@
 require("base.git")
-require("base.finder")
-require("base.explorer")
-require("base.completer")
+require("base.file")
+require("base.search")
+require("base.completion")

@@ -1,3 +1,6 @@
+vim.g.theme = "catppuccin"
+vim.g.enable_lsp = { "gopls", "clangd", "lua_ls" }
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 

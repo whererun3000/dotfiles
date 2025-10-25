@@ -15,6 +15,7 @@
 --- vim.keymap.set('n', 'gR', function() pickers.lsp({ scope = 'references' }) end)
 --- vim.keymap.set('n', 'gI', function() pickers.lsp({ scope = 'implementation' }) end)
 
-require("oil").setup()
+local oil = require("oil")
+oil.setup()
 
-vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = "Open parent directory" })
+vim.keymap.set('n', '-', function() oil.open(nil, { preview = { vertical = true }}) end, { desc = "Open parent directory" })
