@@ -30,4 +30,5 @@ vim.pack.add({
 
 require("plugins.fzf")
 require("plugins.mason")
+require("plugins.diffview")
 require("plugins.colorschemes")

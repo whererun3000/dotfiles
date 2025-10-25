@@ -7,6 +7,7 @@ vim.keymap.set('n', '<C-w>-', '<CMD>split<CR>')
 vim.keymap.set('n', '<C-w>\\', '<CMD>vsplit<CR>')
 
 vim.keymap.set('n', '<Leader>bd', '<CMD>bd<CR>')
+vim.keymap.set('n', '<Leader>td', '<CMD>tabclose<CR>')
 
 vim.keymap.set('n', '<ESC>', '<CMD>nohl<CR>')
 
