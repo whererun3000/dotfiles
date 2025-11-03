@@ -19,7 +19,7 @@ export ZDATADIR=$XDG_DATA_HOME/zsh
 export ZCACHEDIR=$XDG_CACHE_HOME/zsh
 
 export QT_IM_MODULE=fcitx
-export GTK_IM_MODULE=fcitx
+# export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
 export SHELL_SESSION_DIR=$ZCACHEDIR/.zsh_sessions
