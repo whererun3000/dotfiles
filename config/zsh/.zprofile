@@ -24,6 +24,8 @@ export XMODIFIERS=@im=fcitx
 
 export SHELL_SESSION_DIR=$ZCACHEDIR/.zsh_sessions
 
+export PATH=$XDG_BIN_HOME:$PATH
+
 for dir in $(find $ZPLUGDIR -mindepth 1 -maxdepth 1 -type d); do
 	if [ -f "$dir/.zprofile" ]; then
 		. "$dir/.zprofile"
