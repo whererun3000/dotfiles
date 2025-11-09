@@ -1,25 +1,46 @@
 {
 	"layout": "top",
 	"position": "top",
+
+	"reload_style_on_change": true,
+
 	"modules-left": [
 		"niri/workspaces"
 	],
 	"modules-center": [
-		"niri/window"
+		"mpris"
 	],
 	"modules-right": [
 		"tray",
 		"group/audio",
-		"clock"
+		"clock",
+		"group/power"
 	],
 	"group/audio": {
-		"orientation": "horizontal",
+		"orientation": "inherit",
+
 		"drawer": {
 		},
+
 		"modules": [
 			"pulseaudio",
 			"pulseaudio/slider"
 		]
+	},
+	"mpris": {
+		"format": "{player_icon} {dynamic}",
+		"format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
+
+		"interval": 1,
+		"max-length": 50,
+
+		"player-icons": {
+			"default": "⏸",
+			"mpv": "🎵"
+		},
+		"status-icons": {
+			"paused": "▶" 
+		}
 	},
 	"clock": {
 		"format": "{:%H:%M}",
@@ -51,7 +72,6 @@
 	},
 	"pulseaudio": {
 		"format": "{volume}% {icon}",
-		"format-bluetooth": "{volume}% {icon}",
 		"format-muted": "",
 		"format-icons": {
 			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
@@ -68,8 +88,12 @@
 				""
 			]
 		},
+		"format-bluetooth": "{volume}% {icon}",
+
 		"scroll-step": 1,
+
 		"on-click": "pavucontrol",
+
 		"ignored-sinks": [
 			"Easy Effects Sink"
 		]
@@ -78,5 +102,39 @@
 		"min": 0,
 		"max": 100,
 		"orientation": "horizontal"
+	},
+	"group/power": {
+		"orientation": "inherit",
+			"drawer": {
+				"children-class": "not-power",
+				"transition-duration": 500,
+				"transition-left-to-right": true,
+			    },
+		"modules": [
+			"custom/power",
+			"custom/quit",
+			"custom/lock",
+			"custom/reboot"
+		]
+	},
+	"custom/quit": {
+		"format": "󰗼",
+		"tooltip": false,
+		"on-click": "loginctl terminate-user $USER"
+	},
+	"custom/lock": {
+		"format": "󰍁",
+		"tooltip": false,
+		"on-click": "swaylock -i ~/Pictures/lockscreen"
+	},
+	"custom/reboot": {
+		"format": "󰜉",
+		"tooltip": false,
+		"on-click": "reboot"
+	},
+	"custom/power": {
+		"format": "",
+		"tooltip": false,
+		"on-click": "shutdown now"
 	}
 }
