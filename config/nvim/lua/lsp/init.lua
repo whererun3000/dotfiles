@@ -1,7 +1,6 @@
 vim.lsp.enable(vim.g.enable_lsp)
 vim.lsp.inlay_hint.enable()
 vim.lsp.on_type_formatting.enable()
-vim.lsp.linked_editing_range.enable()
 
 vim.keymap.del('n', 'gO')
 vim.keymap.del('n', 'gri')
