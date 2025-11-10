@@ -1,9 +1,7 @@
 {
 	"layout": "top",
 	"position": "top",
-
 	"reload_style_on_change": true,
-
 	"modules-left": [
 		"niri/workspaces"
 	],
@@ -18,10 +16,7 @@
 	],
 	"group/audio": {
 		"orientation": "inherit",
-
-		"drawer": {
-		},
-
+		"drawer": {},
 		"modules": [
 			"pulseaudio",
 			"pulseaudio/slider"
@@ -30,16 +25,14 @@
 	"mpris": {
 		"format": "{player_icon} {dynamic}",
 		"format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
-
 		"interval": 1,
 		"max-length": 50,
-
 		"player-icons": {
 			"default": "⏸",
 			"mpv": "🎵"
 		},
 		"status-icons": {
-			"paused": "▶" 
+			"paused": "▶"
 		}
 	},
 	"clock": {
@@ -61,8 +54,7 @@
 		},
 		"actions": {
 			"on-click-right": "mode",
-			"on-scroll-up": "tz_up",
-			"on-scroll-down": "tz_down",
+
 			"on-scroll-up": "shift_up",
 			"on-scroll-down": "shift_down"
 		}
@@ -89,11 +81,8 @@
 			]
 		},
 		"format-bluetooth": "{volume}% {icon}",
-
 		"scroll-step": 1,
-
 		"on-click": "pavucontrol",
-
 		"ignored-sinks": [
 			"Easy Effects Sink"
 		]
@@ -105,11 +94,10 @@
 	},
 	"group/power": {
 		"orientation": "inherit",
-			"drawer": {
-				"children-class": "not-power",
-				"transition-duration": 500,
-				"transition-left-to-right": true,
-			    },
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true
+		},
 		"modules": [
 			"custom/power",
 			"custom/quit",
