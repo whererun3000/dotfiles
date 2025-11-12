@@ -4,4 +4,4 @@ fi
 
 source <(fzf --zsh)
 
-export FZF_COMPLETION_OPTS="--height=30% --layout=reverse --preview='fzf-preview.sh {}'"
+export FZF_COMPLETION_OPTS="--height=30% --layout=reverse --preview='fzf.sh preview {}'"
