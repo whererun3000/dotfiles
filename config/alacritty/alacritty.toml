@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/catppuccin.toml"
+    "~/.config/alacritty/themes/synthwave_84.toml"
 ]
 
 [font]
