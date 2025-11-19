@@ -71,10 +71,10 @@ window#waybar {
     background-color: #f1c40f;
 }
 
-#pulseaudio.muted {
+/*#pulseaudio.muted {
     color: #2a5c45;
     background-color: #90b1b1;
-}
+}*/
 
 #pulseaudio:hover {
     background-color: #a37800;
