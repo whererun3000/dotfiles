@@ -3,6 +3,10 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+environment {
+    XMODIFIERS "@im=fcitx"
+}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -111,7 +115,7 @@ input {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 2
+    gaps 5
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -121,7 +125,7 @@ layout {
     //   together with the previously focused column.
     center-focused-column "never"
 
-    always-center-single-column
+    // always-center-single-column
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -161,7 +165,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 1
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -271,13 +275,15 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "mako"
-// spawn-at-startup "polybar"
 spawn-at-startup "waybar"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-sh-at-startup "swayidle.sh"
 spawn-sh-at-startup "fcitx5 -d -r"
-spawn-sh-at-startup "swaybg -i ~/Pictures/desktop -m fill"
+spawn-sh-at-startup "clipse --listen"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -289,7 +295,7 @@ hotkey-overlay {
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
 // This option will also fix border/focus ring drawing behind some semitransparent windows.
 // After enabling or disabling this, you need to restart the apps for this to take effect.
-// prefer-no-csd
+prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -330,6 +336,13 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+
+    match app-id="firefox"
+    match app-id="waypaper"
+    match app-id="chromium"
+    match app-id="clipse-gui"
+    match app-id="org.gnome.Software"
+
     open-floating true
 }
 
@@ -347,9 +360,18 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    geometry-corner-radius 12
+window-rule {
     clip-to-geometry true
+    geometry-corner-radius 12
+}
+
+// opacity window
+window-rule {
+    match app-id="Code"
+    match app-id="Alacritty"
+
+    opacity 0.8
+    draw-border-with-background false
 }
 
 binds {

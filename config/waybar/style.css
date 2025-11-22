@@ -44,12 +44,12 @@ window#waybar {
 #clock,
 #power {
     margin: 0 5px;
+    padding: 0 10px;
     border-radius: 10px;
 }
 
 #tray {
     color: #ffffff;
-    padding: 0 10px;
     background-color: #2980b9;
 }
 
@@ -69,15 +69,6 @@ window#waybar {
     color: #000000;
     padding: 0 7px;
     background-color: #f1c40f;
-}
-
-/*#pulseaudio.muted {
-    color: #2a5c45;
-    background-color: #90b1b1;
-}*/
-
-#pulseaudio:hover {
-    background-color: #a37800;
 }
 
 #pulseaudio-slider slider {
@@ -103,20 +94,20 @@ window#waybar {
 #clock {
     color: #ffffff;
     padding: 0 10px;
-    border-radius: 10px;
     background-color: #64727d;
 }
 
 #power {
     color: #ffffff;
-    margin-right: 4px;
+    margin-right: 5px;
+    background-color: #f08080;
 }
 
-#custom-lock,
-#custom-quit,
 #custom-power,
-#custom-reboot {
+#custom-reboot,
+#custom-logout,
+#custom-lockscreen {
     color: #ffffff;
-    margin: 0 10px;
-    background-color: transparent;
+    padding: 0 8px;
+    background-color: #f08080;
 }
