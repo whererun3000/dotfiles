@@ -42,7 +42,7 @@ window#waybar {
 #tray,
 #audio,
 #clock,
-#power {
+#custom-power {
     margin: 0 5px;
     padding: 0 10px;
     border-radius: 10px;
@@ -97,17 +97,8 @@ window#waybar {
     background-color: #64727d;
 }
 
-#power {
+#custom-power {
     color: #ffffff;
-    margin-right: 5px;
-    background-color: #f08080;
-}
-
-#custom-power,
-#custom-reboot,
-#custom-logout,
-#custom-lockscreen {
-    color: #ffffff;
-    padding: 0 8px;
+    margin-right: 8px;
     background-color: #f08080;
 }

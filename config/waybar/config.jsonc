@@ -12,7 +12,7 @@
 		"tray",
 		"group/audio",
 		"clock",
-		"group/power"
+		"custom/power"
 	],
 	"group/audio": {
 		"orientation": "inherit",
@@ -92,37 +92,9 @@
 		"max": 100,
 		"orientation": "horizontal"
 	},
-	"group/power": {
-		"orientation": "inherit",
-		"drawer": {
-			"transition-duration": 500,
-			"transition-left-to-right": false
-		},
-		"modules": [
-			"custom/power",
-			"custom/reboot",
-			"custom/logout",
-			"custom/lockscreen"
-		]
-	},
 	"custom/power": {
-		"format": "",
+		"format": "󰐥",
 		"tooltip": false,
 		"on-click": "wlogout"
-	},
-	"custom/reboot": {
-		"format": "󰜉",
-		"tooltip": false,
-		"on-click": "systemctl reboot"
-	},
-	"custom/logout": {
-		"format": "󰗼",
-		"tooltip": false,
-		"on-click": "loginctl terminate-user $USER"
-	},
-	"custom/lockscreen": {
-		"format": "󰍁",
-		"tooltip": false,
-		"on-click": "swaylock"
 	}
 }
