@@ -1,7 +1,11 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/synthwave_84.toml"
+  "~/.config/alacritty/dank.toml"
 ]
+
+[terminal]
+shell =  { program = "/bin/zsh" }
+osc52 =  "CopyPaste"
 
 [font]
 size = 10.0
@@ -10,11 +14,29 @@ size = 10.0
 decorations = "None"
 option_as_alt = "Both"
 
+[scrolling]
+history = 3023
+
 [cursor]
 style = { shape = "Underline", blinking = "On" }
-vi_mode_style = { shape = "Block", blinking = "Off" }
 thickness = 0.2
+vi_mode_style = { shape = "Block", blinking = "Off" }
+blink_interval = 500
+unfocused_hollow = true
 
-[terminal]
-shell =  { program = "/bin/zsh" }
-osc52 =  "CopyPaste"
+[mouse]
+hide_when_typing = true
+
+[bell]
+duration = 0
+
+[keyboard]
+bindings = [
+  { key = "C",       mods = "Control|Shift", action = "Copy"  },
+  { key = "V",       mods = "Control|Shift", action = "Paste" },
+  { key = "N",       mods = "Control|Shift", action = "SpawnNewInstance" },
+  { key = "Equals",  mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "Minus",   mods = "Control",       action = "DecreaseFontSize" },
+  { key = "Key0",    mods = "Control",       action = "ResetFontSize"    },
+  { key = "Enter",   mods = "Shift",         chars = "\n" },
+]
