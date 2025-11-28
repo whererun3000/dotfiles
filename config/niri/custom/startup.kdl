@@ -1,0 +1,8 @@
+spawn-at-startup "mako"
+spawn-at-startup "waybar"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
+spawn-sh-at-startup "swayidle.sh"
+spawn-sh-at-startup "fcitx5 -d -r"
+spawn-sh-at-startup "clipse --listen"
