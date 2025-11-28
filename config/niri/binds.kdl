@@ -9,9 +9,9 @@ binds {
     // === Window Management ===
     Mod+M              { maximize-column; }
     Mod+W              { toggle-column-tabbed-display; }
+    Mod+F              { toggle-window-floating; }
     Mod+Q repeat=false { close-window; }
     Mod+Shift+M        { fullscreen-window; }
-    Mod+Shift+F        { toggle-window-floating; }
     // Mod+Shift+F        { switch-focus-between-floating-and-tiling; }
 
     // === Focus Navigation ===
