@@ -5,3 +5,6 @@
 .netrwhist
 
 config/nvim/lua/config/user/
+
+config/niri/dms/
+config/alacritty/dank-theme.toml

@@ -29,3 +29,8 @@ window-rule {
     opacity 0.5
 }
 
+recent-windows {
+    highlight {
+        corner-radius 15
+    }
+}

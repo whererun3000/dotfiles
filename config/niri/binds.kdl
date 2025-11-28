@@ -4,7 +4,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // === Application Launchers ===
-    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "$TERMINAL"; }
+    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "alacritty"; }
 
     // === Window Management ===
     Mod+M              { maximize-column; }

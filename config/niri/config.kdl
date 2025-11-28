@@ -117,4 +117,4 @@ include "binds.kdl"
 include "layout.kdl"
 include "window.kdl"
 
-include "dms/config.kdl"
+include "dank/config.kdl"
