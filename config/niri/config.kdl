@@ -6,8 +6,8 @@ environment {
   XDG_CURRENT_DESKTOP "niri"
 
   QT_QPA_PLATFORM "wayland"
-  QT_QPA_PLATFORMTHEME "gtk3"
-  QT_QPA_PLATFORMTHEME_QT6 "gtk3"
+  QT_QPA_PLATFORMTHEME "qt6ct"
+  QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
 
   ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
@@ -118,3 +118,7 @@ include "layout.kdl"
 include "window.kdl"
 
 include "dank/config.kdl"
+
+include "dms/layout.kdl"
+include "dms/colors.kdl"
+include "dms/wpblur.kdl"
