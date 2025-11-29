@@ -118,7 +118,3 @@ include "layout.kdl"
 include "window.kdl"
 
 include "dank/config.kdl"
-
-include "dms/layout.kdl"
-include "dms/colors.kdl"
-include "dms/wpblur.kdl"
