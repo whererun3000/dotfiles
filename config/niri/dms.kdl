@@ -1,3 +1,14 @@
+spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+spawn-at-startup "dms" "run"
+spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
+
+layer-rule {
+    match namespace="^quickshell$"
+    match namespace="dms:blurwallpaper"
+
+    place-within-backdrop true
+}
+
 binds {
     // Application
     Mod+Space hotkey-overlay-title="Application Launcher" { 
@@ -47,3 +58,7 @@ binds {
        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
     }  
 }
+
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/alttab.kdl"

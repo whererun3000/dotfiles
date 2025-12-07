@@ -1,5 +1,0 @@
-include "binds.kdl"
-
-include "layer.kdl"
-
-include "startup.kdl"
