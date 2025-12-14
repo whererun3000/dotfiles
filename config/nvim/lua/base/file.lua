@@ -18,4 +18,5 @@
 local oil = require("oil")
 oil.setup()
 
-vim.keymap.set('n', '-', function() oil.open(nil, { preview = { vertical = true }}) end, { desc = "Open parent directory" })
+vim.keymap.set('n', '<Leader>e', function() Snacks.explorer() end, { desc = "Explorer" })
+vim.keymap.set('n', '-', function() oil.open(nil, { preview = { vertical = true }}) end, { desc = "Open Parent Directory" })

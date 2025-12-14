@@ -26,9 +26,9 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim.git" },
 
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
+
+	{ src = "https://github.com/folke/snacks.nvim.git" },
 })
 
 require("plugins.fzf")
-require("plugins.mason")
-require("plugins.diffview")
-require("plugins.colorschemes")
+require("plugins.snacks")

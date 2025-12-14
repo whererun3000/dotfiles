@@ -9,9 +9,13 @@ vim.keymap.del('n', 'grt')
 vim.keymap.del({ 'n', 'v' }, 'gra')
 
 local fzf = require("fzf-lua")
+local picker = Snacks.picker
+
+require("mason").setup()
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(args)
+		--[[
 		vim.keymap.set('n', 'gQ', vim.lsp.buf.format, { buf = args.buffer })
 		vim.keymap.set('n', 'gn', vim.lsp.buf.rename, { buf = args.buffer })
 		vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buf = args.buffer })
@@ -22,5 +26,19 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'go', fzf.lsp_document_symbols, { buf = args.buffer })
 
 		vim.keymap.set('n', '<C-p>o', fzf.lsp_workspace_symbols, { buf = args.buffer })
+		--]]
+		--
+		vim.keymap.set('n', 'gn', vim.lsp.buf.rename, { buf = args.buffer })
+		vim.keymap.set('n', 'gQ', vim.lsp.buf.format, { buf = args.buffer })
+
+		vim.keymap.set('n', 'ga', fzf.lsp_code_actions, { buf = args.buffer })
+
+		vim.keymap.set('n', 'gd', picker.lsp_definitions, { buf = args.buffer })
+		vim.keymap.set('n', 'gy', picker.lsp_type_definitions, { buf = args.buffer })
+		vim.keymap.set('n', 'gD', picker.lsp_declarations, { buf = args.buffer })
+		vim.keymap.set('n', 'gr', picker.lsp_references, { buf = args.buffer })
+		vim.keymap.set('n', 'gI', picker.lsp_implementations, { buf = args.buffer })
+		vim.keymap.set('n', 'go', picker.lsp_symbols, { buf = args.buffer })
+		vim.keymap.set('n', 'gO', picker.lsp_workspace_symbols, { buf = args.buffer })
 	end,
 })
