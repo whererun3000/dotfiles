@@ -1,17 +1,19 @@
 [general]
 import = [
-  "~/.config/alacritty/dank-theme.toml"
+  "~/.config/alacritty/themes/tokyo_night.toml"
 ]
 
 [terminal]
-shell =  { program = "/bin/zsh" }
+shell =  { program = "/bin/zsh", args = ["-l"] }
 osc52 =  "CopyPaste"
 
 [font]
 size = 10.0
+normal = { family = "DepartureMono Nerd Font Mono" }
 
 [window]
 decorations = "None"
+startup_mode = "Maximized"
 option_as_alt = "Both"
 
 [scrolling]

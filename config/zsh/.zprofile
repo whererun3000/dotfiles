@@ -7,8 +7,6 @@ export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 
-export WORKSPACE_HOME=$HOME/Workspace
-
 export LESSKEYIN=$XDG_CONFIG_HOME/less/.lesskey
 export LESSHISTFILE=$XDG_CACHE_HOME/less/.lesshst
 
@@ -19,6 +17,8 @@ export ZDATADIR=$XDG_DATA_HOME/zsh
 export ZCACHEDIR=$XDG_CACHE_HOME/zsh
 
 export SHELL_SESSION_DIR=$ZCACHEDIR/.zsh_sessions
+
+export WORKSPACE_HOME=$HOME/Workspace
 
 export PATH=$XDG_BIN_HOME:$PATH
 

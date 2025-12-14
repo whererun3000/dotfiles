@@ -1,5 +1,7 @@
 set -o emacs
 
+export HISTFILE=$ZCACHEDIR/.zsh_history
+
 ls() {
 	command ls -h --color=always "$@"
 }
