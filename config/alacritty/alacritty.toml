@@ -9,8 +9,8 @@ osc52 =  "CopyPaste"
 
 [font]
 size = 10.0
-# normal = { family = "RobotoMono Nerd Font Mono" }
-normal = { family = "FiraCode Nerd Font Mono" }
+normal = { family = "RobotoMono Nerd Font Mono" }
+# normal = { family = "FiraCode Nerd Font Mono" }
 
 [window]
 decorations = "None"
