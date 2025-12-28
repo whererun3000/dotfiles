@@ -1,8 +1,21 @@
-switch (uname)
-case "Darwin"
-	set -gx HOMEBREW_API_DOMAIN "https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
-	set -gx HOMEBREW_PIP_INDEX_URL "https://pypi.tuna.tsinghua.edu.cn/simple"
-	set -gx HOMEBREW_BOTTLE_DOMAIN "https://mirrors.ustc.edu.cn/homebrew-bottles"
+if status is-interactive
+	switch (uname)
+	case Darwin
+		switch (uname -m)
+		case arm64
+			set HOMEBREW_PREFIX "/opt/homebrew"
+		case '*'
+			set HOMEBREW_PREFIX "/usr/local/homebrew"
+		end
+	end
 
-	eval $(brew shellenv)
+	if test -e "$HOMEBREW_PREFX"
+		eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+
+		set -gx HOMEBREW_BREW_GIT_REMOTE "https://mirrors.ustc.edu.cn/brew.git"
+		set -gx HOMEBREW_CORE_GIT_REMOTE "https://mirrors.ustc.edu.cn/homebrew-core.git"
+
+		set -gx HOMEBREW_API_DOMAIN "https://mirrors.ustc.edu.cn/homebrew-bottles/api"
+		set -gx HOMEBREW_BOTTLE_DOMAIN "https://mirrors.ustc.edu.cn/homebrew-bottles"
+	end
 end
