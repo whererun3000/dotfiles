@@ -1,11 +1,21 @@
-.zcompdump
-.zsh_history
-.zsh_history/
-.zsh_sessions/
+# zsh
+config/zsh/.zcompdump
+config/zsh/.zsh_history
+config/zsh/.zsh_history/
+config/zsh/.zsh_sessions/
 
+# vim
 .netrwhist
 
+# neovim
 config/nvim/lua/config/user/
 
+# dms
 config/niri/dms/
 config/alacritty/dank-theme.toml
+
+# git
+config/git/x
+
+# fish
+config/fish/conf.d/x.fish

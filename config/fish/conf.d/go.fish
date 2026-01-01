@@ -1,5 +1,3 @@
-printf "load go.fish"
-
 if status is-interactive
     set -gx GOROOT /opt/golang/go
     set -gx GOPATH "$WORKSPACE_HOME/go/path"

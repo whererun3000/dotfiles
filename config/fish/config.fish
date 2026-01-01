@@ -13,7 +13,5 @@ if status is-interactive
     set -gx LESSKEYIN "$XDG_CONFIG_HOME/less/.lesskey"
     set -gx LESSHISTFILE "$XDG_CACHE_HOME/less/.lesshst"
 
-    set -gx WORKSPACE_HOME "$HOME/Workspace"
-
     set -gx PATH $XDG_BIN_HOME $PATH
 end

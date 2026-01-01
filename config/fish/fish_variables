@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export WORKSPACE_HOME:/home/wayank/Workspace
 SETUVAR --export XDG_BIN_HOME:/home/wayank/\x2elocal/bin
 SETUVAR --export XDG_CACHE_HOME:/home/wayank/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/wayank/\x2econfig
