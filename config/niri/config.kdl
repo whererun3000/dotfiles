@@ -192,7 +192,7 @@ window-rule {
 }
 
 // floating window
-window-rule {
+/-window-rule {
     match app-id=r#"^steam$"#
     match app-id=r#"^firefox$"#
     match app-id=r#"^chromium$"#
