@@ -19,3 +19,7 @@ config/git/x
 
 # fish
 config/fish/conf.d/x.fish
+
+#niri
+config/niri/noctalia.kdl
+config/alacritty/themes/noctalia.toml

@@ -1,16 +1,5 @@
-spawn-at-startup "mako"
-spawn-at-startup "waybar"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-
-spawn-sh-at-startup "swayidle.sh"
-spawn-sh-at-startup "fcitx5 -d -r"
-spawn-sh-at-startup "clipse --listen"
-
 binds {
-    Mod+E hotkey-overlay-title="Open a File Manager: thunar" { spawn "thunar"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Return hotkey-overlay-title="Open a Terminal: Alacritty" { spawn "alacritty"; }
+    Mod+Space hotkey-overlay-title="Run an Application" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -i ~/Pictures/lockscreen"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.

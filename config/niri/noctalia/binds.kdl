@@ -1,0 +1,10 @@
+binds {
+    // Core
+    Mod+S hotkey-overlay-title="Control Center"{ spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    Mod+Comma hotkey-overlay-title="Settings" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+    Mod+Space hotkey-overlay-title="Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+
+    // Utility
+    Mod+V hotkey-overlay-title="Clipborad History" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen lock"; }
+}
