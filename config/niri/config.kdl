@@ -24,9 +24,9 @@ hotkey-overlay {
     skip-at-startup
 }
 
-
 include "binds.kdl"
 include "windows.kdl"
 include "layouts.kdl"
 
 include "noctalia/config.kdl"
+include "./noctalia.kdl"
