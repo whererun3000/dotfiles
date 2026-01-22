@@ -2,9 +2,11 @@
 	editor = vim
 
 [alias]
+  br = branch
   bl = blame
-	st = status
+  co = checkout
 	lg = log --color --graph --pretty=format:'%C(bold red)%h%C(reset) - %C(bold green)(%cr)%C(bold blue)<%an>%C(reset) -%C(bold yellow)%d%C(reset) %s'
+	st = status
 
 [diff]
 	tool = vimdiff
