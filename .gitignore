@@ -18,7 +18,7 @@ config/alacritty/dank-theme.toml
 config/git/x
 
 # fish
-config/fish/conf.d/x.fish
+config/fish/config.fish
 
 #niri
 config/niri/noctalia.kdl
