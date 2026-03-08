@@ -24,3 +24,5 @@
 
 [include]
   path = ./x
+[safe]
+	directory = /home/wayank/.local/share
