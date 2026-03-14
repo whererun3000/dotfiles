@@ -1,5 +1,0 @@
-spawn-at-startup "qs" "-c" "noctalia-shell"
-
-include "../noctalia.kdl"
-include "binds.kdl"
-include "layouts.kdl"
