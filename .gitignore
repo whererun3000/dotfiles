@@ -20,6 +20,5 @@ config/git/x
 # fish
 config/fish/config.fish
 
-#niri
-config/niri/noctalia.kdl
-config/alacritty/themes/noctalia.toml
+# kitty
+config/kitty/kitty.conf.bak 
