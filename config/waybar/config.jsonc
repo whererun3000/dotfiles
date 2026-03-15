@@ -1,0 +1,111 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "niri/workspaces"
+  ],
+  "modules-right": [
+    "mpris",
+    "tray",
+    "group/audio",
+    "battery",
+    "clock"
+  ],
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
+    "max-length": 50,
+    "player-icons": {
+      "default": "⏸",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "▶"
+    }
+  },
+  "group/audio": {
+    "drawer": {
+    },
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ],
+    "orientation": "horizontal"
+  },
+  "tray": {
+    "spacing": 5
+  },
+  "pulseaudio": {
+    "rotate": 0,
+    "scroll-step": 5,
+
+    "format": "{volume}% {icon}",
+    "format-muted": "婢",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+  },
+  "pulseaudio/slider": {
+    "min": 5,
+    "max": 100
+  },
+  "battery": {
+    "rotate": 0,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon}",
+    "format-icons": [
+      "󰝦",
+      "󰪞",
+      "󰪟",
+      "󰪠",
+      "󰪡",
+      "󰪢",
+      "󰪣",
+      "󰪤",
+      "󰪥"
+    ],
+    "format-plugged": "󰂄",
+    "format-charging": "<span color='#a6d189'>󱐋</span>"
+  },
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "rotate": 0,
+    "on-click": "/usr/local/bin/ags -t ActivityCenter",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  }
+}

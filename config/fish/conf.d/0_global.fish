@@ -1,4 +1,4 @@
-if status is-interactive
+if not status is-interactive
     set -gx EDITOR vim
     set -gx VISUAL vim
 
