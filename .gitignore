@@ -12,6 +12,7 @@ config/nvim/lua/config/user/
 
 # dms
 config/niri/dms/
+config/kitty/dank-*.conf
 config/alacritty/dank-theme.toml
 
 # git
