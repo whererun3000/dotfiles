@@ -4,5 +4,3 @@
 
 vim.keymap.del("n", "H")
 vim.keymap.del("n", "L")
-
-vim.keymap.set("n", ";", ":")
