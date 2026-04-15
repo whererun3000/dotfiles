@@ -1,4 +1,4 @@
-if status is-interactive
+if status is-login
     set -gx GOROOT /opt/golang/go
     set -gx GOPATH "$WORKSPACE_HOME/go/path"
     set -gx GOBIN "$GOPATH/bin"

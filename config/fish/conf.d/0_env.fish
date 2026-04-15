@@ -1,7 +1,4 @@
-if status is-interactive
-    set -gx EDITOR vim
-    set -gx VISUAL vim
-
+if status is-login
     set -gx XDG_BIN_HOME "$HOME/.local/bin"
     set -gx XDG_DATA_HOME "$HOME/.local/share"
     set -gx XDG_STATE_HOME "$HOME/.local/state"
@@ -14,4 +11,9 @@ if status is-interactive
     set -gx WORKSPACE_HOME "$HOME/Workspace"
 
     set -gx PATH $XDG_BIN_HOME $PATH
+end
+
+if status is-interactive
+    set -gx EDITOR vim
+    set -gx VISUAL vim
 end
