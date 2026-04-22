@@ -16,7 +16,7 @@ config/kitty/dank-*.conf
 config/alacritty/dank-theme.toml
 
 # git
-config/git/x
+config/git/config.local
 
 # fish
 config/fish/config.fish

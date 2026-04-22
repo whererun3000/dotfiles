@@ -7,6 +7,9 @@ local map = LazyVim.safe_keymap_set
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
 
+map("n", "<C-n>", "<CMD>bn<CR>", { desc = "Next Buffer" })
+map("n", "<C-p>", "<CMD>bp<CR>", { desc = "Previous Buffer" })
+
 map("c", "<C-b>", "<Left>")
 map("c", "<C-f>", "<Right>")
 map("c", "<C-a>", "<Home>")
