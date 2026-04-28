@@ -4,7 +4,7 @@ font-family = "RobotoMono Nerd Font Mono"
 
 # Window Configuration
 background-blur = true
-background-opacity = 0.7
+background-opacity = 0.85
 
 # Cursor Configuration
 cursor-style = underline
@@ -46,3 +46,4 @@ shell-integration-features = cursor,sudo,title,no-cursor
 gtk-single-instance = true
 
 config-file = ?auto/theme.ghostty
+# config-file = ?themes/dankcolors
