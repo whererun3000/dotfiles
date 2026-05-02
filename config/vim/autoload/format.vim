@@ -1,4 +1,4 @@
-function! formatting#FormatFile()
+function! format#FormatFile()
 	if &equalprg != ''
 		let l:pos = getcurpos()
 		execute "normal! gg=G"

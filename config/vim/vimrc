@@ -1,5 +1,4 @@
 syntax on
-
 filetype indent plugin on
 
 set autoread
@@ -27,14 +26,17 @@ set smartindent
 
 set mouse=a
 
-colorscheme everforest
+set grepformat=%f:%l:%c:%m
 
-inoremap <silent> <C-B> <Left>
-inoremap <silent> <C-F> <Right>
-inoremap <silent> <C-P> <Up>
-inoremap <silent> <C-N> <Down>
-inoremap <silent> <C-A> <Home>
-inoremap <silent> <C-E> <End>
+if executable('rg')
+	set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+endif
+
+augroup quickfix
+	autocmd QuickFixCmdPost grep copen
+augroup END
+
+colorscheme everforest
 
 cnoremap <C-B> <Left>
 cnoremap <C-F> <Right>
