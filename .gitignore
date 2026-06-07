@@ -23,3 +23,6 @@ config/fish/config.fish
 
 # kitty
 config/kitty/kitty.conf.bak 
+
+# ghostty
+config/ghostty/themes/*
