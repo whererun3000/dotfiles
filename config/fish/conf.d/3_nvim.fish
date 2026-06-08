@@ -1,3 +1,3 @@
 if status is-interactive
-    set -gx NVIM_APPNAME lazynvim
+	# set -gx NVIM_APPNAME lazynvim
 end

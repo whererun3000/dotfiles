@@ -25,4 +25,5 @@ config/fish/config.fish
 config/kitty/kitty.conf.bak 
 
 # ghostty
-config/ghostty/themes/*
+config/ghostty/auto/
+config/ghostty/themes/

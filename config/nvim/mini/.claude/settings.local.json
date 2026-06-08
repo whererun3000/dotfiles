@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(NVIM_APPNAME=mininvim nvim *)",
+      "Bash(nvim --version)"
+    ]
+  }
+}
