@@ -46,4 +46,5 @@ shell-integration-features = cursor,sudo,title,no-cursor
 gtk-single-instance = true
 
 config-file = ?auto/theme.ghostty
-# config-file = ?themes/dankcolors
+
+macos-option-as-alt = left
