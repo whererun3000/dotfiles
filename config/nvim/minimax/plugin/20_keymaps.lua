@@ -250,9 +250,9 @@ nmap_leader('vL', '<Cmd>lua MiniVisits.remove_label()<CR>',       'Remove label'
 
 vim.keymap.set('n', "<Esc>", function() vim.cmd("nohl") end, { silent = true })
 
-vim.keymap.set("c", "<C-b>", "<Left>", { silent = true })
-vim.keymap.set("c", "<C-f>", "<Right>", { silent = true })
-vim.keymap.set("c", "<C-a>", "<Home>", { silent = true })
-vim.keymap.set("c", "<C-e>", "<End>", { silent = true })
-vim.keymap.set("c", "<A-b>", "<C-Left>", { silent = true })
-vim.keymap.set("c", "<A-f>", "<C-Right>", { silent = true })
+vim.keymap.set("c", "<C-b>", "<Left>")
+vim.keymap.set("c", "<C-f>", "<Right>")
+vim.keymap.set("c", "<C-a>", "<Home>")
+vim.keymap.set("c", "<C-e>", "<End>")
+vim.keymap.set("c", "<A-b>", "<C-Left>")
+vim.keymap.set("c", "<A-f>", "<C-Right>")
