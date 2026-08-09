@@ -15,7 +15,7 @@ if status is-login
         set -gx HOMEBREW_API_DOMAIN "https://mirrors.ustc.edu.cn/homebrew-bottles/api"
         set -gx HOMEBREW_BOTTLE_DOMAIN "https://mirrors.ustc.edu.cn/homebrew-bottles"
 
-        set -l LLVM_PATH "$HOMEBREW_PREFIX/opt/llvm"
+        set -l LLVM_PATH $(brew --prefix llvm)
 
         if test -e "$LLVM_PATH"
             set -gxp PATH "$LLVM_PATH/bin"
