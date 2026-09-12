@@ -1,5 +1,5 @@
 # Font Configuration
-font-size = 10
+font-size = 12
 font-family = "RobotoMono Nerd Font Mono"
 
 # Window Configuration
@@ -7,7 +7,7 @@ background-blur = true
 background-opacity = 1
 
 # Cursor Configuration
-cursor-style = underline
+cursor-style = block_hollow
 cursor-style-blink = true
 cursor-click-to-move = true
 
@@ -23,28 +23,25 @@ mouse-hide-while-typing = true
 app-notifications = no-clipboard-copy,no-config-reload
 
 # Key bindings for common actions
-#keybind = ctrl+c=copy_to_clipboard
-#keybind = ctrl+v=paste_from_clipboard
+keybind = ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
 keybind = ctrl+t=new_tab
 keybind = ctrl+shift+n=new_window
 keybind = ctrl+zero=reset_font_size
 keybind = ctrl+plus=increase_font_size:1
 keybind = ctrl+minus=decrease_font_size:1
 
+macos-option-as-alt = left
+
 # Material 3 UI elements
 unfocused-split-fill = #44464f
 unfocused-split-opacity = 0.8
-
-# Tab configuration
-gtk-titlebar = false
 
 # Shell integration
 shell-integration = detect
 shell-integration-features = cursor,sudo,title,no-cursor
 
-# Rando stuff
+gtk-titlebar = false
 gtk-single-instance = true
 
 config-file = ?auto/theme.ghostty
-
-macos-option-as-alt = left
