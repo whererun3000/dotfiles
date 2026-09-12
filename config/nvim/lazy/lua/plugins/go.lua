@@ -11,7 +11,7 @@ return {
           },
           cmd_env = {
             GOGC = "90",
-            GOMEMLIMIT = "8GiB",
+            GOMEMLIMIT = "4GiB",
           },
         },
       },
